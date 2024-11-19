@@ -4,19 +4,20 @@ body {
 
 .title {
   font-size: 50px;
-  color: black;
+  color: white;
   margin-bottom: 0px;
 }
 
 .subtitle {
   font-family: Verdana;
+  color: white;
   margin-top: 0.1em;
   margin-bottom: 0.1em;
 }
 
 p {
   font-size: 18px;
-  color: black;
+  color: white;
 }
 
 .disclaimer {
