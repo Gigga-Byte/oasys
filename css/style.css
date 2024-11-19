@@ -4,20 +4,20 @@ body {
 
 .title {
   font-size: 50px;
-  color: white;
+  color: #ffffff;
   margin-bottom: 0px;
 }
 
 .subtitle {
   font-family: Verdana;
-  color: white;
+  color: #ffffff;
   margin-top: 0.1em;
   margin-bottom: 0.1em;
 }
 
 p {
   font-size: 18px;
-  color: white;
+  color: #ffffff;
 }
 
 .disclaimer {
