@@ -27,6 +27,8 @@ p {
 .disclaimer {
   font-family: Verdana;
   font-size: 12px;
+  margin-top: 0.1em;
+  margin-bottom: 0.1em;
   color: grey;
 }
 
