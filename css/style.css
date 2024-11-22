@@ -1,4 +1,4 @@
-/* sigma colour - #090A0A */
+/* Text + Background Config */
 
 body {
   background-image: linear-gradient(#090A0A, #6076bf);
@@ -8,40 +8,72 @@ body {
   font-family: "Geist Mono", serif;
   font-weight: 400;
   font-size: 64px;
-  color: #e3e3e3;
-  margin-bottom: 0px;
+  color: white;
 }
 
 .subtitle {
   font-family: "Geist Mono", serif;
   font-weight: 400;
   font-size: 24px;
-  color: #ffffff;
-  margin-top: 0.1em;
-  margin-bottom: 0.1em;
+  color: white;
 }
 
 p {
   font-size: 18px;
-  color: #ffffff;
+  color: white;
+}
+
+.information {
+  font-family: "Geist Mono", serif;
+  font-size: 16px;
+  font-weight: 600;
+  color: white;
+
+  background-color: cornflowerblue;
+  border-radius: 15px;
 }
 
 .disclaimer {
   font-family: Verdana;
   font-size: 12px;
-  margin-top: 0.1em;
-  margin-bottom: 0.1em;
   color: grey;
 }
-
-/* .dashboard { 
-  display: grid;
-  background-colour: #090A0A;
-} */
 
 .andrew {
   color: #ffd769;
   font-size: 10px;
   font-family: Arial;
   text-decoration-line: underline;
+}
+
+/* Grid Stuff */
+
+.dashboard { 
+  display: grid;
+  gap: 0px;
+  grid-template-columns: repeat(3, 1fr);
+  grid-template-rows: 1fr 0.25fr 3fr 0.25fr;
+  grid-template-areas: 
+  "header header header"
+  "subtitle subtitle subtitle"
+  "info info info"
+  "footer footer footer"
+  ;
+}
+
+.title {
+  grid-area: header;
+}
+
+.subtitle {
+  grid-area: subtitle;
+}
+
+.information{
+  grid-area: info;
+  
+}
+
+.disclaimer{
+  grid-area: footer;
 }
