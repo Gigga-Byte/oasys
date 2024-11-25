@@ -1,4 +1,4 @@
-/* Text + Background Config */
+/* Text + Background */
 
 body {
   background-image: linear-gradient(#090A0A, #6076bf);
@@ -46,20 +46,7 @@ p {
   text-decoration-line: underline;
 }
 
-/* Grid Stuff */
-
-.dashboard { 
-  display: grid;
-  gap: 0px;
-  grid-template-columns: repeat(3, 1fr);
-  grid-template-rows: 1fr 0.25fr 3fr 0.25fr;
-  grid-template-areas: 
-  "header header header"
-  "subtitle subtitle subtitle"
-  "info info info"
-  "footer footer footer"
-  ;
-}
+/* Grid */
 
 .title {
   grid-area: header;
@@ -71,9 +58,40 @@ p {
 
 .information{
   grid-area: info;
-  
 }
 
 .disclaimer{
   grid-area: footer;
+}
+
+.dashboard{
+  grid-area: dashboard
+}
+
+/* Entire Website Grid */
+
+.container { 
+  display: grid;
+  gap: 0px;
+  grid-template-columns: repeat(3, 1fr);
+  grid-template-rows: 1fr 0.25fr 3fr 0.25fr;
+  grid-template-areas: 
+  "header header header"
+  "subtitle subtitle subtitle"
+  "dashboard dashboard dashboard"
+  "footer footer footer"
+  ;
+}
+
+/* Dashboard Grid */
+
+.dashboard{
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  grid-template-rows: repeat(3 , 1fr);
+  grid-template-areas:
+  "info info info"
+  "info info info"
+  "info info info"  
+  ;
 }
