@@ -9,6 +9,7 @@ body {
   font-weight: 400;
   font-size: 64px;
   color: white;
+  text-shadow: 4px 4px rgb(35, 82, 184);
 }
 
 .subtitle {
@@ -29,7 +30,7 @@ p {
   font-weight: 600;
   color: white;
 
-  background-color: cornflowerblue;
+  background-color: #4a618b;
   border-radius: 15px;
 }
 
