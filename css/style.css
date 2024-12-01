@@ -1,7 +1,7 @@
 /* Text + Background */
 
 body {
-  background-image: linear-gradient(#090A0A, #6076bf);
+  background-image: linear-gradient(#151518, #2c3151, #6080ea);
 }
 
 .title {
@@ -23,16 +23,6 @@ p {
   color: white;
 }
 
-.information {
-  font-family: "Geist Mono", serif;
-  font-size: 16px;
-  font-weight: 600;
-  color: white;
-
-  background-color: cornflowerblue;
-  border-radius: 15px;
-}
-
 .disclaimer {
   font-family: Verdana;
   font-size: 12px;
@@ -46,6 +36,45 @@ p {
   text-decoration-line: underline;
 }
 
+/* Dashoboard */
+
+/* Humidity */
+.humitidyInfo {
+  font-family: "Geist Mono", serif;
+  font-weight: 600;
+  color: white;
+
+  background-color: cornflowerblue;
+  border-radius: 5px;
+}
+
+.humidity {
+  font-family: "Geist Mono", serif;
+  font-size: 100px;
+  color: white;
+  margin-top: 5px;
+  margin-bottom: 0px;
+  margin-left: 15px;
+  margin-right: 0px;
+}
+
+.humidityPrecent {
+  font-family: "Geist Mono, serif";
+  color: white;
+  margin-top: 0px;
+  margin-bottom: 0px;
+  margin-left: 15px;
+  margin-right: 0px;
+}
+
+/* Flood Info */
+.floodInfo{
+  font-family: "Geist Mono", serif;
+
+  background-color: #6080ea;
+  border-radius: 5px;
+}
+
 /* Grid */
 
 .title {
@@ -56,16 +85,20 @@ p {
   grid-area: subtitle;
 }
 
-.information{
-  grid-area: info;
-}
-
 .disclaimer{
   grid-area: footer;
 }
 
 .dashboard{
   grid-area: dashboard
+}
+
+.floodInfo{
+  grid-area: flood;
+}
+
+.humidity{
+  grid-area: humid;
 }
 
 /* Entire Website Grid */
@@ -87,11 +120,15 @@ p {
 
 .dashboard{
   display: grid;
-  grid-template-columns: repeat(3, 1fr);
-  grid-template-rows: repeat(3 , 1fr);
+  gap: 5px;
+  justify-content: left;
+  grid-template-columns: repeat(5, 1fr);
+  grid-template-rows: repeat(5 , 1fr);
   grid-template-areas:
-  "info info info"
-  "info info info"
-  "info info info"  
+  "flood flood humid humid humid"
+  "flood flood humid humid humid"
+  "flood flood humid humid humid"
   ;
 }
+
+/* andrew is cool 👍*/

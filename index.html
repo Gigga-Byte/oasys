@@ -7,14 +7,21 @@
 </head>
 
 <body>
- <!-- <h1 class="title">Welcome to Oasys!</h1>
-  <h3 class="subtitle"><i>Where flooding and data meets.</i></h3> -->
-    
+
 <div class="container">
   <div class="item title">Welcome to Oasys!</div>
   <div class="item subtitle">Where flooding and data meets.</div>
   <div class="item dashboard">
-  <div class="item information">[PLACEHOLDER TEXT WOW]</div>
+    <div class="floodInfo">
+      <div class="floodTitle">Flood Risk</div>
+      <div class="floodPrecent">23%</div>
+      <div class="floodLevel">Low</div>
+    </div>
+    <div class="item humitidyInfo">
+      <div class="humitidy">Humitidy</div>
+      <div class="humitidyPrecent">87%</div>
+    <div class="weatherCondition"></div>
+    </div>
   </div>
   <div class="item disclaimer">
     Note: None of the data on this site is real.
@@ -22,9 +29,20 @@
     Andrew is cool 👍
 </div>
 
-  
-<!--  <p class="disclaimer"><i>Note: None of the data on this site is real.</i></p>
-  <p class="disclaimer"> Andrew is cool 👍</p>
-  <p class="andrew"> silly billy time XD^2</p> -->
+  <script>
+    const apiKey = "ae410caafc9b73d97a8d60d5b3957e8c";
+    const apiURL = "api.openweathermap.org/data/2.5/weather?lat=43.2472949&lon=-79.8681989&units=metric";
+
+    async function checkWeather(){
+      const response = await fetch(apiURL+ `&appid=${apiKey}`)
+      var data = await response.json;
+      console.log(data);
+    }
+
+    checkWeather();
+  </script>
 </body>
 </html>
+
+<!-- api.openweathermap.org/data/2.5/weather?lat=43.2472949&lon=-79.8681989&units=metric&appid=ae410caafc9b73d97a8d60d5b3957e8c -->
+ <!--andrew is cool 👍-->
