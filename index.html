@@ -28,21 +28,6 @@
     <br>
     Andrew is cool 👍
 </div>
-
-  <script>
-    const apiKey = "ae410caafc9b73d97a8d60d5b3957e8c";
-    const apiURL = "api.openweathermap.org/data/2.5/weather?lat=43.2472949&lon=-79.8681989&units=metric";
-
-    async function checkWeather(){
-      const response = await fetch(apiURL+ `&appid=${apiKey}`)
-      var data = await response.json;
-      console.log(data);
-    }
-
-    checkWeather();
-  </script>
 </body>
 </html>
-
-<!-- api.openweathermap.org/data/2.5/weather?lat=43.2472949&lon=-79.8681989&units=metric&appid=ae410caafc9b73d97a8d60d5b3957e8c -->
  <!--andrew is cool 👍-->  
