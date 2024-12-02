@@ -42,7 +42,6 @@ p {
 /* Humidity */
 .humitidyInfo {
   font-family: "Geist Mono", serif;
-  font-weight: 600;
   color: white;
 
   background-color: cornflowerblue;
@@ -51,7 +50,6 @@ p {
 
 .humidity {
   font-family: "Geist Mono", serif;
-  font-size: 100px;
   color: white;
   margin-top: 5px;
   margin-bottom: 0px;
