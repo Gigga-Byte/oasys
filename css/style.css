@@ -25,9 +25,12 @@ p {
 }
 
 .disclaimer {
+  background-color: #7887b8;
+  border-radius: 5px;
+
   font-family: Verdana;
   font-size: 12px;
-  color: grey;
+  color: white;
 }
 
 .andrew {
@@ -43,6 +46,7 @@ p {
 .humitidyInfo {
   font-family: "Geist Mono", serif;
   color: white;
+  font-size: 25px;
 
   background-color: cornflowerblue;
   border-radius: 5px;
@@ -69,9 +73,21 @@ p {
 /* Flood Info */
 .floodInfo{
   font-family: "Geist Mono", serif;
+  color: white;
+  font-size: 25px;
 
   background-color: #6080ea;
   border-radius: 5px;
+}
+
+/* Temp */
+.tempInfo {
+font-family: "Geist Mono", serif;
+color: white;
+font-size: 25px;
+
+background-color: #9aaeef;
+border-radius: 5px;
 }
 
 /* Grid */
@@ -100,17 +116,25 @@ p {
   grid-area: humid;
 }
 
+.tempInfo{
+  grid-area: temp;
+}
+
+.map{
+  grid-area: map;
+}
+
 /* Entire Website Grid */
 
 .container { 
   display: grid;
   gap: 0px;
   grid-template-columns: repeat(3, 1fr);
-  grid-template-rows: 1fr 0.25fr 3fr 0.25fr;
+  grid-template-rows: 0.25fr 0.25fr 2fr 0.25fr;
   grid-template-areas: 
   "header header header"
   "subtitle subtitle subtitle"
-  "dashboard dashboard dashboard"
+  "dashboard dashboard map"
   "footer footer footer"
   ;
 }
@@ -125,9 +149,15 @@ p {
   grid-template-rows: repeat(5 , 1fr);
   grid-template-areas:
   "flood flood humid humid humid"
-  "flood flood humid humid humid"
-  "flood flood humid humid humid"
+  "flood flood temp temp temp"
+  "flood flood temp temp temp"
   ;
 }
 
-/* andrew is cool 👍*/
+/* Images */
+.map {
+  justify-content: left;
+  margin: 5px;
+}
+
+/* andrew is cool 👍 */
